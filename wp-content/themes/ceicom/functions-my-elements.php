@@ -115,35 +115,35 @@
 
     // SLIDER HOME AND BANNER PAGES INTERNAL
     //--------------------------------------
-    function SliderAndBannerInternal() {
-        $out = '';
+    // function SliderAndBannerInternal() {
+    //     $out = '';
 
-        $slider = '';
-        if($slider == '') return;
+    //     $slider = '';
+    //     if($slider == '') return;
 
-        $slider = get_field('slider');
+    //     // $slider = get_field('slider');
 
-        if(is_home()):
-            // Slider
-            if($slider):
-                $out .= '<div class="slick-slider slider-home">';
-                    foreach( $slider as $item ):
-                        $image = $item['imagem'];
-                        $link = $item['link'];
-                        $link = ($link) ? 'href="'. $link .'" target="_blank"' : '';
+    //     if(is_home()):
+    //         // Slider
+    //         if($slider):
+    //             $out .= '<div class="slick-slider slider-home">';
+    //                 foreach( $slider as $item ):
+    //                     $image = $item['imagem'];
+    //                     $link = $item['link'];
+    //                     $link = ($link) ? 'href="'. $link .'" target="_blank"' : '';
 
-                        $out .= '<a '. $link .'><img src="'. $image .'" alt="Slider"></a>';
-                    endforeach;
-                $out .= '</div>';
-            endif;
-        elseif(is_page() && !is_home()):
-            $out .= '<div class="banner-internal"><div class="wrapper-content">'. PageTitle() .'</div></div>';
-        else:
-            $out .= '<div class="banner-internal"><div class="wrapper-content">'. PageTitle() .'</div></div>';
-        endif;
+    //                     $out .= '<a '. $link .'><img src="'. $image .'" alt="Slider"></a>';
+    //                 endforeach;
+    //             $out .= '</div>';
+    //         endif;
+    //     elseif(is_page() && !is_home()):
+    //         $out .= '<div class="banner-internal"><div class="wrapper-content">'. PageTitle() .'</div></div>';
+    //     else:
+    //         $out .= '<div class="banner-internal"><div class="wrapper-content">'. PageTitle() .'</div></div>';
+    //     endif;
 
-        return $out;
-    }
+    //     return $out;
+    // }
 
 
     // LIST POST EXAMPLE
