@@ -101,18 +101,18 @@
 
 
 	// ACF PAGE OPTIONS
-	//--------------------------------------
-	// if(function_exists('acf_add_options_page')){
-	// 	acf_add_options_page(array(
-	// 		'page_title' => 'SITE_NAME',
-	// 		'menu_title' => 'SITE_NAME',
-	// 		'menu_slug'  => 'site_name',
-	// 		'capability' => 'manage_options',
-	// 		'post_id'    => 'options',
-	// 		'position'   => 3,
-	// 		'redirect'	 => false
-	// 	));
-	// }
+	// --------------------------------------
+	if(function_exists('acf_add_options_page')){
+		acf_add_options_page(array(
+			'page_title' => 'SITE_NAME',
+			'menu_title' => 'SITE_NAME',
+			'menu_slug'  => 'site_name',
+			'capability' => 'manage_options',
+			'post_id'    => 'options',
+			'position'   => 3,
+			'redirect'	 => false
+		));
+	}
 
 
 	// REMOVE POST TYPE (POST) TO ADMIN
