@@ -1,4 +1,30 @@
 // GERAL
 //--------------------------------------
 
-//TITULOS EN CONTENIDO
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: $font;
+}
+
+//DISPLAY
+
+.primary-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    height: fit-content;
+    padding: 32px 0;
+
+    .secondary-container {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 98vw;
+        height: fit-content;
+    }
+}
