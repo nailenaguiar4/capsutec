@@ -57,10 +57,11 @@
 			}
 			add_action( 'widgets_init', 'widgets_init' );
 
-
 			// ADD SUPPORT FOR RESPONSIVE EMBEDDED CONTENT
 			add_theme_support( 'responsive-embeds' );
 
+			// ADD WOOCOMMERCE SUPPORT
+			add_theme_support( 'woocommerce' );
 
 			// ADD THUMBNAIL TO POST THEME
 			add_theme_support( 'post-thumbnails' );
@@ -69,7 +70,6 @@
 		}
 	endif;
 	add_action( 'after_setup_theme', 'theme_setup' );
-
 
 	// SCRIPTS AND STYLES
 	//--------------------------------------
