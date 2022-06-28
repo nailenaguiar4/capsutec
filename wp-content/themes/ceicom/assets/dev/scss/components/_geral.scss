@@ -10,6 +10,7 @@
 }
 
 //DISPLAY
+// ---------------
 
 .primary-container {
     width: 100vw;
@@ -19,12 +20,23 @@
     align-items: center;
     align-content: center;
     height: fit-content;
-    padding: 32px 0;
+    padding: 18px 0 32px;
 
     .secondary-container {
         margin: 0 auto;
         width: 100%;
-        max-width: 98vw;
+        max-width: 1200px;
         height: fit-content;
+        padding: 24px 0;
+
+        h2 {
+            margin-bottom: 24px;
+            font-size: $titulo-peq;
+            font-weight: bold;
+        }
+
+        h2.blue {
+            color: $color-blue;
+        }
     }
 }

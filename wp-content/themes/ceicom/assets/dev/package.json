@@ -8,6 +8,7 @@
   },
   "author": "Keller Kichel",
   "license": "BSD-2-Clause",
+  "type": "module",
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
@@ -25,5 +26,8 @@
   },
   "browserslist": [
     "extends @wordpress/browserslist-config"
-  ]
+  ],
+  "dependencies": {
+    "swiper": "^8.2.5"
+  }
 }
