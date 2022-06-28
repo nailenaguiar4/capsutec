@@ -13,7 +13,7 @@
 // ---------------
 
 .primary-container {
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -37,6 +37,17 @@
 
         h2.blue {
             color: $color-blue;
+        }
+    }
+
+    &.primary-container--products {
+        max-width: 100%;
+        width: 1250px;
+        align-items: initial;
+        margin: auto;
+        gap: 18px;
+        @media screen and (min-width: 800px) {
+            width: 1440px;
         }
     }
 }
