@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+// ESSENCIAIS
+//------------------------------------
+@import 'misc/fonts';
+@import 'mix/variables';
+@import 'components/geral';
+
+
+@import 'components/normalize';
+
+
+// ESTILOS COMPONENTES (gerados arquivos separados)
+//------------------------------------
+@import 'components/header';
+@import 'components/footer';
+@import 'components/btn';
+
+
+//ESTILOS PÁGINAS
+//------------------------------------
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/contact';
+@import 'pages/produtos';

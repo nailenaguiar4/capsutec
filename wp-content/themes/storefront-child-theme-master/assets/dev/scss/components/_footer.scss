@@ -1,0 +1,50 @@
+// FOOTER
+//--------------------------------------
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+        padding: 32px 0;
+
+        div {
+            p, li, a {
+                font-size: $text-peq;
+                line-height: 2.5;
+            }
+
+            ul {
+                list-style: none;
+            }
+        }
+
+        h3 {
+            font-size: $titulo-peq;
+            color: $color-black;
+            margin-bottom: 12px;
+        }
+
+        img {
+            height: 50px;
+            align-self: center;
+        }
+    }
+
+    
+}
+
+.footer-bottom {
+    background-color: $color-black;
+    padding: 24px;
+    div {
+        display: flex;
+        justify-content: space-between;
+        span {
+            color: $color-white;
+            font-size: $text-med;
+        }
+    }
+}
