@@ -62,7 +62,7 @@
 
 
 		// THEME
-		wp_enqueue_style('css-main', get_template_directory_uri() . '-child-theme-master/assets/css/style.min.css', wp_get_theme()->get( 'Version'));
+		wp_enqueue_style('css-main', get_theme_file_uri()  . '/assets/css/style.min.css', wp_get_theme()->get( 'Version'));
 
 		//SWIPER
 		if (is_home()) {
@@ -73,7 +73,7 @@
 		//SLIDER HOME
 
 		if (is_home()) {
-			wp_enqueue_script('slider-home', get_template_directory_uri() . '/assets/js/slider-home.min.js', wp_get_theme()->get( 'Version'));
+			wp_enqueue_script('slider-home', get_theme_file_uri() . '/assets/js/slider-home.min.js', wp_get_theme()->get( 'Version'));
 		}
 		
 
@@ -85,8 +85,8 @@
 		
 		// FORMS
 		if(is_page('fale-conosco') ){
-			wp_enqueue_script('js-mask', get_template_directory_uri() . '/assets/vendor/jquery/jquery.mask.min.js', '1.0', true );
-			wp_enqueue_script('js-forms', get_template_directory_uri() . '/assets/js/forms.min.js', wp_get_theme()->get( 'Version'));
+			wp_enqueue_script('js-mask', get_theme_file_uri()  . '/assets/vendor/jquery/jquery.mask.min.js', '1.0', true );
+			wp_enqueue_script('js-forms', get_theme_file_uri()  . '/assets/js/forms.min.js', wp_get_theme()->get( 'Version'));
 		}
 	}
 
