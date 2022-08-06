@@ -1,25 +1,24 @@
-@charset "UTF-8";
+// essentials
 
-// ESSENCIAIS
-//------------------------------------
-@import 'misc/fonts';
-@import 'mix/variables';
-@import 'components/geral';
+@import "essentials/global";
 
+@import "essentials/variables";
 
-@import 'components/normalize';
+@import "essentials/general";
 
 
-// ESTILOS COMPONENTES (gerados arquivos separados)
-//------------------------------------
-@import 'components/header';
-@import 'components/footer';
-@import 'components/btn';
+// LAYOUT
 
+@import "layout/containers";
 
-//ESTILOS PÁGINAS
-//------------------------------------
-@import 'pages/home';
-@import 'pages/about';
-@import 'pages/contact';
-@import 'pages/produtos';
+// COMPONETNES
+
+@import "components/header";
+@import "components/footer";
+@import "components/slider-home";
+@import "components/btn";
+
+//PAGES
+
+@import "pages/home";
+@import "pages/single";

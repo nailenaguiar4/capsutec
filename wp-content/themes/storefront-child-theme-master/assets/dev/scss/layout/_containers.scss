@@ -1,0 +1,35 @@
+// Contenedor para cualquier seccion que sea hijo directo del body
+.primary-container {
+    width: 100%;
+    height: fit-content;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+// Contenedor para Alinear
+.secondary-container {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+// Display Fle
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1200px) {
+    .secondary-container {
+        padding: 0 12px;
+    }
+}

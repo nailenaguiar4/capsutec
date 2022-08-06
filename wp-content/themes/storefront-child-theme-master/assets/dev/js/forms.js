@@ -26,7 +26,7 @@ $(document).ready(function () {
 
     // CIDADE E ESTADO
     //--------------------------------------
-    var api = "../wp-content/themes/ceicom/assets/json/city_state.json";
+    var api = "../wp-content/themes/Movies/assets/json/city_state.json";
     var db = [];
 
     function fetchDb(json, cb) {

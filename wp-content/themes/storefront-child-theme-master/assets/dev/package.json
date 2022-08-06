@@ -1,5 +1,5 @@
 {
-  "name": "project",
+  "name": "movies-parana",
   "version": "1.0.0",
   "description": "Project Description ",
   "main": "gulpfile.js",
@@ -26,7 +26,14 @@
   "browserslist": [
     "extends @wordpress/browserslist-config"
   ],
+  "repository": {
+    "type": "git",
+    "url": "\u0016https://github.com/diegog-ux10/movies-parana"
+  },
+  "keywords": [
+    "wordpress"
+  ],
   "dependencies": {
-    "swiper": "^8.2.5"
+    "lightbox2": "^2.11.3"
   }
 }

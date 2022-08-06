@@ -1,14 +1,81 @@
-// BUTTONS
-//--------------------------------------
+// BOTONES
 
-.btn-green {
-    color: $color-white;
-    box-shadow: $shadow;
-    background-color: $color-green;
-    border-radius: 22px;
-    width: 173px;
-    height: 45px;
-    padding: 12px 38px;
+.btn {
+    height: 50px;
+    max-width: 200px;
+    border: none;
+    font-family: $montserrat;
+    text-transform: uppercase;
+    cursor: pointer;
     text-align: center;
-    margin-bottom: 1rem;
+    line-height: 40px;
+}
+
+.btn-taxonomy {
+    height: 50px;
+    max-width: 200px;
+    border: none;
+    font-family: $montserrat;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+}
+
+.btn-radius {
+    height: 50px;
+    max-width: 300px;
+    border: none;
+    border-radius: 20px;
+    font-family: $montserrat;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transition: 1s;
+}
+
+.btn-gray {
+ background-color: $color-gray-two;
+ color: $color-white;
+}
+
+.btn-gray:hover {
+    background-color: $color-btn-gray-hover;
+    color: $color-white;
+   }
+
+.btn-white {
+    background-color: $color-white;
+    color: $color-gray;
+}
+
+.btn-white:hover {
+    background-color: $color-btn-white-hover;
+}
+
+.btn-brown {
+    background-color: #3D3532;
+    color: $color-white;
+    text-align: center;
+}
+
+.btn-brown:hover {
+    background-color: #6b5d58;
+    color: $color-white;
+    transition: 1s;
+}
+
+.btn-manual-download {
+    background-color: $color-gray;
+    color: $color-white;
+    padding: 10px 24px;
+    border-radius:25px;  
+}
+
+.btn-manual-download:hover {
+    background-color: $color-black;
+    color: $color-white;
+    transition: 1s;
 }
