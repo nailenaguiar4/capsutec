@@ -41,15 +41,38 @@
     <div class="primary-container language-change" aria-hidden>
       <div class="secondary-container language-change-container" aria-hidden>
         <div class="icon-container" aria-hidden>
-          <img src="<?php echo get_theme_file_uri() . '/assets/img/Global-Icon.png' ?>" alt="globar-icon" class="globar-icon" aria-hidden>
-          <a href="">
-            <img src="<?php echo get_theme_file_uri() . './assets/img/Br-icon.png' ?>" alt="Brazil flag Icon" aria-label="Change language to Portuguese">
+        <!-- icon to change language -->
+          <img  src="<?php echo get_theme_file_uri() . '/assets/img/Global-Icon.png' ?>"  
+                alt="globar-icon" 
+                class="globar-icon" 
+                aria-hidden
+            />
+          <!-- buttons to change language -->
+          <a href="#">
+            <img  src="<?php echo get_theme_file_uri() . './assets/img/Br-icon.png' ?>" 
+                  alt="Brazil flag Icon" 
+                  aria-label="Change language to Portuguese">
           </a>
-          <a href=""><img src="<?php echo get_theme_file_uri() . './assets/img/Ep-icon.png' ?>" alt="Spain flag Icon" aria-label="Change language to Spanish"></a>
-          <a href=""><img src="<?php echo get_theme_file_uri() . './assets/img/Us-icon.png' ?>" alt="US flag Icon" aria-label="Change language to English"></a>
+
+          <a href="#">
+            <img  src="<?php echo get_theme_file_uri() . './assets/img/Ep-icon.png' ?>" 
+                  alt="Spain flag Icon" 
+                  aria-label="Change language to Spanish">
+          </a>
+
+          <a href="#">
+            <img  src="<?php echo get_theme_file_uri() . './assets/img/Us-icon.png' ?>" 
+                  alt="US flag Icon" 
+                  aria-label="Change language to English">
+          </a>
+
         </div>      
       </div>
     </div>
+     
+    <!-- The menu structure belongs to the repository:
+    https://github.com/AlexWebLab/bootstrap-5-wordpress-navbar-walker -->
+    
     <nav class="navbar navbar-expand-md navbar-light secondary-container">
       <div class="container-fluid">
           <?php echo Logo() ?>

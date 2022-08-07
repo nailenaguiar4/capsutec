@@ -18,12 +18,29 @@
 
 </div>
 
-<section class="primary-container">
-    <div class="secondary-container">
-        <div class="ofert">
+<!-- section to display products on sale -->
+<section class="primary-container" aria-hidden>
+    <div class="secondary-container" aria-hidden>
+        <div class="carousel-offers" aria-label="Featured Products">
+            <div class="title">
+                <?php echo __('Vendas') ?>
+            </div>
+            <div class="carousel-offers_container">
+                <div class="product-card">
+                    <div class="imagem-card">
+                        <img src="" alt="Product Imagen">                        
+                    </div>
 
+                    <div class="info-card-container">
+                        <span> <?php __('Adicionar à cotação') ?> </span>
+                        <span> <?php __('Jogo de Disco em Duralumínio') ?> </span>
+                    </div>
+
+                    <a href="#"> <?php __('Ver Produto') ?> </a>
+                    
+                </div>
+            </div>
         </div>
-
     </div>
 </section>
 
