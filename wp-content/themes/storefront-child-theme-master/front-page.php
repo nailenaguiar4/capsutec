@@ -1,5 +1,5 @@
 <?php get_header() ?>
- <!-- Swiper -->
+ <!-- Swiper Slider Home-->
  <div class="swiper mySwiper">
     <div class="swiper-wrapper">
         <div class="swiper-slide">Slide 1</div>
@@ -15,7 +15,17 @@
 
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
-    
+
 </div>
+
+<section class="primary-container">
+    <div class="secondary-container">
+        <div class="ofert">
+
+        </div>
+
+    </div>
+</section>
+
 <?php get_footer() ?>
     
