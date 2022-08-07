@@ -99,6 +99,7 @@
 		remove_menu_page('edit.php');
 		remove_menu_page('edit-comments.php');
 	}
+
 	add_action( 'admin_menu', 'wp_remove_plugin_admin_menu', 9999 );
 
 
@@ -106,6 +107,7 @@
 	function add_opengraph_doctype( $output ) {
 		return $output . ' xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"';
 	}
+
 	add_filter('language_attributes', 'add_opengraph_doctype');
 
 
@@ -119,67 +121,6 @@
 
 	add_action('wp_head', 'ti_custom_javascript');
 
-	// AJAX Estado
-
-	// add_action('wp_ajax_nopriv_filter_estados', 'load_estados');
-	// add_action('wp_ajax_filter_estados', 'load_estados');
-
-	// function load_estados() {
-	// 	$html = '';
-	// 	$estado = $_POST['estado'];
-	// 	$terms = get_term_children($estado, 'estado');
-
-	// 	foreach ($terms as $term):
-	// 		$ciuda = get_term_by('term_taxonomy_id', $term, 'estado');
-	// 		$html .= "<option value='" . $ciuda->term_id . "'>" . $ciuda->name . "</option>";
-	// 	endforeach;
-
-	// 	echo $html;
-
-	// 	exit;
-	// }
-
-	// AJAX REPRESENTANTES
-
-	// add_action('wp_ajax_nopriv_filter_representantes', 'load_representantes');
-	// add_action('wp_ajax_filter_representantes', 'load_representantes');
-
-	// function load_representantes() {
-	// 	$html = '';
-	// 	$id = $_POST['id'];
-	// 	$int_id = (int)$id;
-	// 	$representantes = get_posts(array(
-	// 		'post_type' => 'representante',
-	// 		'numberposts' => -1,
-	// 		'tax_query' => array(
-	// 		array(
-	// 			'taxonomy' => 'estado',
-	// 			'field' => 'id',
-	// 			'terms' => $int_id // Where term_id of Term 1 is "1".
-	// 		)
-	// 		)
-	// 	));
-	// 	$name = get_term( $int_id )->name;
-
-	// 	echo "<h2 class='h2-bold bold text-gray'>Lojas em " . $name . "</h2>"; 
-
-	// 	foreach($representantes as $representante):
-	// 				$direccion = get_field('en', $representante->ID);
-	// 				$telefono = get_field('telefone', $representante->ID);
-	// 				$email = get_field('email', $representante->ID);
-	// 				$html = "<div class='representates-item flex-column'>
-	// 							<h4 class='text-sm bold text-gray'>" . $representante->post_title . "</h4>
-	// 							<span class='text-sm text-gray'>". $direccion . "</span>
-	// 							<span class='text-sm text-gray'>" . $telefono . "</span>
-	// 							<span class='text-sm text-gray'>" . $email ."</span>
-	// 						</div>;";
-	// 		endforeach;
-
-	// 	echo $html;
-
-	// 	exit;
-	// }
-
 	// Nav Walker Menu
 
 	add_filter( 'nav_menu_link_attributes', 'prefix_bs5_dropdown_data_attribute', 20, 3 );
@@ -189,7 +130,7 @@
 	 * @param array    $atts HTML attributes applied to the item's `<a>` element.
 	 * @param WP_Post  $item The current menu item.
 	 * @param stdClass $args An object of wp_nav_menu() arguments.
-	 * @return array
+	 * @return arrayW
 	 */
 
 	function prefix_bs5_dropdown_data_attribute( $atts, $item, $args ) {

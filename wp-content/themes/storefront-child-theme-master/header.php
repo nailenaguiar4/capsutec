@@ -15,9 +15,6 @@
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"></script>
             
-    <!-- kit awesome -->
-    <script src="https://kit.fontawesome.com/8625a07089.js" crossorigin="anonymous"></script>
-    
     <!-- swiper -->
     <?php if (is_home()) { ?>
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
