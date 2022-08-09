@@ -88,6 +88,11 @@
 			wp_enqueue_script('js-mask', get_theme_file_uri()  . '/assets/vendor/jquery/jquery.mask.min.js', '1.0', true );
 			wp_enqueue_script('js-forms', get_theme_file_uri()  . '/assets/js/forms.min.js', wp_get_theme()->get( 'Version'));
 		}
+
+		//CAROUSEL
+
+		wp_enqueue_script('js-carousel', get_theme_file_uri()  . '/assets/js/carousel-offers.min.js', wp_get_theme()->get( 'Version'));
+	
 	}
 
 		add_action( 'wp_enqueue_scripts', 'theme_scripts' );

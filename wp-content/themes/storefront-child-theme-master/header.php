@@ -30,6 +30,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/css/lightgallery.min.css" integrity="sha512-Szyqrwc8kFyWMllOpTgYCMaNNm/Kl8Fz0jJoksPZAWUqhE60VRHiLLJVcIQKi+bOMffjvrPCxtwfL+/3NPh/ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <?php } ?>
 
+    <script src="https://kit.fontawesome.com/f68ef5ce0a.js" crossorigin="anonymous"></script>
+
     <?php wp_head(); ?>
 
 </head>
