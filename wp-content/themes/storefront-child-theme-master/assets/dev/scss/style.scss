@@ -1,0 +1,25 @@
+// essentials
+
+@import "essentials/global";
+
+@import "essentials/variables";
+
+@import "essentials/general";
+
+
+// LAYOUT
+
+@import "layout/containers";
+
+// COMPONETNES
+
+@import "components/header";
+@import "components/footer";
+@import "components/slider-home";
+@import "components/btn";
+@import "components/offers-carousel";
+
+//PAGES
+
+@import "pages/home";
+@import "pages/single";

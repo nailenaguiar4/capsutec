@@ -25,5 +25,8 @@
   },
   "browserslist": [
     "extends @wordpress/browserslist-config"
-  ]
+  ],
+  "dependencies": {
+    "swiper": "^8.2.5"
+  }
 }

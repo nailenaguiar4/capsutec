@@ -1,2 +1,14 @@
 // BUTTONS
 //--------------------------------------
+
+.btn-green {
+    color: $color-white;
+    box-shadow: $shadow;
+    background-color: $color-green;
+    border-radius: 22px;
+    width: 173px;
+    height: 45px;
+    padding: 12px 38px;
+    text-align: center;
+    margin-bottom: 1rem;
+}

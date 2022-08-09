@@ -57,10 +57,11 @@
 			}
 			add_action( 'widgets_init', 'widgets_init' );
 
-
 			// ADD SUPPORT FOR RESPONSIVE EMBEDDED CONTENT
 			add_theme_support( 'responsive-embeds' );
 
+			// ADD WOOCOMMERCE SUPPORT
+			add_theme_support( 'woocommerce' );
 
 			// ADD THUMBNAIL TO POST THEME
 			add_theme_support( 'post-thumbnails' );
@@ -69,7 +70,6 @@
 		}
 	endif;
 	add_action( 'after_setup_theme', 'theme_setup' );
-
 
 	// SCRIPTS AND STYLES
 	//--------------------------------------
@@ -83,11 +83,14 @@
 		wp_enqueue_style('css-main', get_template_directory_uri() . '/assets/css/style.min.css', wp_get_theme()->get( 'Version'));
 		wp_enqueue_script('js-main', get_template_directory_uri() . '/assets/js/scripts.min.js', wp_get_theme()->get( 'Version'));
 
-		//SLICK SLIDER
+		//SWIPER
 		if(is_home()){
-			wp_enqueue_style('css-slick', get_template_directory_uri() . '/assets/vendor/slick/slick.css', '1.0', true);
-			wp_enqueue_script('js-slick', get_template_directory_uri() . '/assets/vendor/slick/slick.min.js', '1.0', true);
-			wp_enqueue_script('js-slider-home', get_template_directory_uri() . '/assets/js/slider-home.min.js', wp_get_theme()->get( 'Version'));
+			wp_enqueue_script(
+				'js-swiper-home',
+				get_template_directory_uri() . '/assets/dev/js/sliders.js', 
+				wp_get_theme()->get( 'Version')
+			);
+			// wp_enqueue_script('js-slider-home', get_template_directory_uri() . '/assets/js/carousel-home.min.js', wp_get_theme()->get( 'Version'));
 		}
 
 
@@ -97,11 +100,12 @@
 			wp_enqueue_script('js-forms', get_template_directory_uri() . '/assets/js/forms.min.js', wp_get_theme()->get( 'Version'));
 		}
 	}
+
 	add_action( 'wp_enqueue_scripts', 'theme_scripts' );
 
 
 	// ACF PAGE OPTIONS
-	//--------------------------------------
+	// --------------------------------------
 	if(function_exists('acf_add_options_page')){
 		acf_add_options_page(array(
 			'page_title' => 'SITE_NAME',
@@ -129,3 +133,18 @@
 		return $output . ' xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"';
 	}
 	add_filter('language_attributes', 'add_opengraph_doctype');
+
+	// CHANGES SCRIPT TAG
+	//-------------------------------------------
+
+	function add_type_attribute($tag, $handle, $src) {
+		// if not your script, do nothing and return original $tag
+		if ( 'js-swiper-home' !== $handle ) {
+			return $tag;
+		}
+		// change the script tag by adding type="module" and return it.
+		$tag = '<script type="module" src="' . esc_url( $src ) . '"></script>';
+		return $tag;
+	}
+
+	add_filter('script_loader_tag', 'add_type_attribute' , 10, 3);

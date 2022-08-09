@@ -1,0 +1,31 @@
+// Header styles
+//--------------
+
+header {
+    padding: 0 !important;
+    div.language-change {
+        background-color: $color-blue;
+        div.language-change-container {
+            justify-content: flex-end;
+            .icon-container {
+                display: flex;
+                gap: 18px;
+            }
+        }
+    }
+
+    nav.navbar {
+        div.container-fluid {
+            #main-menu {
+                justify-content: flex-end;
+                #menu-menu-principal {
+                    margin: 0 !important;
+                }
+            }
+        }
+    }
+}
+
+
+
+

@@ -50,3 +50,4 @@ wp-config.php
 # ignore node_modules
 
 /wp-content/themes/ceicom/assets/dev/node_modules
+/wp-content/themes/storefront-child-theme-master/assets/dev/node_modules
