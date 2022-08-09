@@ -1,2 +1,2 @@
-# vlc-ceicom
-Proyecto para Empresa VLC
+# Capsutec
+Proyecto para Empresa Capsutec
