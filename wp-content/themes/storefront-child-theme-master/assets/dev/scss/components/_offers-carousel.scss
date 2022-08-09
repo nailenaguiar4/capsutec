@@ -1,0 +1,68 @@
+//CAROUSEL OFFERS
+//---------------
+
+/*Background for offer section*/
+
+section.offers-section {
+    background-color: $color-blue;
+}
+
+/*Carousel Styles*/
+
+div.carousel-offers {
+    white-space: nowrap;
+    background-color: $color-blue;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    position: relative;
+    div.carousel-offers_container {
+        transition: all;
+        transition-duration: 0.3s;
+        display: flex;
+        gap: 16px;
+        padding: 0 8px;
+        div.product-card {
+            display: inline-block;
+            width: 200px;
+            height: 300px;
+            border-radius: 10px;
+            background-color: $color-white;
+            -webkit-box-shadow: -4px 8px 19px -8px rgba(0,0,0,0.75);
+            -moz-box-shadow: -4px 8px 19px -8px rgba(0,0,0,0.75);
+            box-shadow: -4px 8px 19px -8px rgba(0,0,0,0.75);
+            div.imagem-card {
+                height: 50%;
+                a {
+                    img {
+                        width: 200px;
+                        height: 100%;
+                        object-fit: cover;
+                        border-top-left-radius: 10px 10px;                        
+                        border-top-right-radius: 10px 10px;                        
+                    }
+                }
+            }
+
+            .info-card-container {
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+/*Next and Prev Icons*/
+
+#prev, #next {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 50px;
+}
+
+#next {
+    right: 0;
+}
