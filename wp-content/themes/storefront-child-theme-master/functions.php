@@ -158,4 +158,34 @@
 	add_filter( 'wp_nav_menu_args', 'slug_provide_walker_instance', 1001 );
 
 
+	// DISPLAY CATEGORIES
+	//------------------
+
+	function woocommerce_product_category( $args = array() ) {
+		$woocommerce_category_id = get_queried_object_id();
+	  $args = array(
+		  'parent' => $woocommerce_category_id
+	  );
+
+	  $terms = get_terms( 'product_cat', $args );
+
+	  if ( $terms ) {
+		  foreach ( $terms as $term ) {
+			echo '<a href=" ' . esc_url( get_term_link( $term ) ) . ' " class="category-link">';
+			echo '<div class="category-card">';
+			echo '<div class="category-image">';
+			woocommerce_subcategory_thumbnail( $term );
+			echo '</div>';
+			echo '<div class="category-name">';
+			echo '<span>' . __($term->name) . '</span>';
+			echo '</div>';
+			echo '</div>';
+			echo '</a>';
+		  }
+	  }
+	}
+
+	add_action( 'woocommerce_before_shop_loop', 'woocommerce_product_category', 100 );
+
+
 	

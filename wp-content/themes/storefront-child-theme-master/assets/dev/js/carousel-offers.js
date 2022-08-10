@@ -5,6 +5,10 @@ $(document).ready(function () {
     const nextButton = document.querySelector('#next')
     const prevButton = document.querySelector('#prev')
 
+    if (currentMargin <= 0) {
+        
+    }
+
     let currentMargin = 0
     nextButton.onclick = function () {
     currentMargin = currentMargin - 200
@@ -15,5 +19,7 @@ $(document).ready(function () {
     currentMargin = currentMargin + 200
     card.style.marginLeft = currentMargin + "px"
     }
+
+    
 
 });
