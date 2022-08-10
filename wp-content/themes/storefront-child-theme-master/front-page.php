@@ -59,7 +59,7 @@
                     </p>
             <?php endif; ?>                
             </div>
-            <button id="prev">prev</button>
+            <button id="prev" disabled="disabled">prev</button>
             <button id="next"><i class="fa-solid fa-angle-right"></i></button>
             <i class="fa-solid fa-angle-right"></i>
         </div>
@@ -81,5 +81,35 @@
 
 </section>
 
-<?php get_footer() ?>
+<section class="primary-container categories-section">
+    <div class="secondary-container">
+        <div class="categories">
+            <div class="title">
+                <?php echo __('Categorias') ?>
+            </div>
+            <div class="categories_container">
+
+            <!-- Function to fetch categories -->
+            <!-- location: function.php -->
+                <?php woocommerce_product_category(); ?>    
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="primary-container">
+    <div class="secondary-container">
+    
+    </div>
+</section>
+
+
+
+<?php 
+
+
+get_footer(); 
+
+?>
     

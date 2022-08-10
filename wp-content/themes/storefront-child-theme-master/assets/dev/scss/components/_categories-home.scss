@@ -1,0 +1,39 @@
+// CATEGORIES HOME
+// ---------------
+
+.categories-section {
+    background-color: $color-blue;
+    .categories {
+        width: 100%;
+        .categories_container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            .category-link {
+                    width: 24%;
+                    height: 300px;
+                .category-card {
+                    background-color: $color-white;
+                    border-radius: 10px;
+                    .category-image {
+                        img {
+                            border-top-left-radius: 10px 10px;                        
+                            border-top-right-radius: 10px 10px;
+                            object-fit: cover;
+                            height: 200px;  
+                        }
+                    }
+
+                    .category-name {
+                        height: 30px;
+                        display: flex;
+                        justify-content: center;
+                        span {
+                            margin: 0 auto;                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
