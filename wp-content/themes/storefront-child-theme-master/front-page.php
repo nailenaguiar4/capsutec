@@ -66,5 +66,20 @@
     </div>
 </section>
 
+<section 
+    class="primary-container doubts" 
+    style="background-image: url( <?php echo get_theme_file_uri() . '/assets/img/Section-Doubts_background.png'; ?>) ; ">
+
+    <div class="secondary-container doubts-container">
+        <h3 aria-hidden ><?php echo _e('Tem alguma dúvida?') ?></h3>
+        <button type="button" 
+                aria-label="button to go to contact page" 
+                class="btn btn-blue" >        
+            <a href="#"><?php echo _e('Escreva para nós') ?></a>
+        </button>
+    </div>
+
+</section>
+
 <?php get_footer() ?>
     

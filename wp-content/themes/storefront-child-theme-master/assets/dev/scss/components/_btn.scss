@@ -1,1 +1,15 @@
 // BOTONES
+
+.btn {
+    border-radius: 3px;
+    a {
+        font-weight: $bold
+    }
+}
+
+.btn-blue {
+    background-color: $color-blue;
+    a {
+        color: $color-white;
+    }
+}
