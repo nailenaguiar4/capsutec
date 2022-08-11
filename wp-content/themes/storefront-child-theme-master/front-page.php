@@ -98,18 +98,24 @@
     </div>
 </section>
 
-<section class="primary-container">
+<section class="primary-container time">
     <div class="secondary-container">
-    
+      <div class=" time-container">
+      <i class="fa-solid fa-clock"></i>
+      <span><?php echo __('Horário de funcionamento') ?></span>
+      <div class="time-container-child">
+            <ul>
+                <li><?php echo __('Segunda à Quinta 7h45 às 12h00') ?></li>
+                <li><?php echo __('13h15 às 18h00 Sexta 7h45 às 17h00') ?></li>
+            </ul>
+        </div>
+      </div>
     </div>
 </section>
 
 
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14643.676775282507!2d-51.97292!3d-23.427286!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x41f4abfaff04afa2!2sCapsutec%20Encapsuladoras%20e%20Equipamentos%20Farmac%C3%AAuticos!5e0!3m2!1spt-BR!2sbr!4v1660158020778!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-<?php 
 
-
-get_footer(); 
-
-?>
+<?php get_footer();     ?>
     
