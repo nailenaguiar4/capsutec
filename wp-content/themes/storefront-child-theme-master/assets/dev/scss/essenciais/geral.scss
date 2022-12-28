@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+abbr {
+    text-decoration: none !important;
+}
+
+p, span {
+    margin: 0;
+    word-spacing: 1px;
+    letter-spacing: 0.5px;
+}
+
+a:focus, input:focus, textarea:focus {
+    outline: none !important;
+}
+
+a {
+    color: #5A0A19;
+}
+
+a:hover {
+    color: #82B500;;
+}
