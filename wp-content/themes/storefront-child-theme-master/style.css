@@ -16,3 +16,23 @@ Tags:         	black, white, light, two-columns, left-sidebar, right-sidebar, re
 /*
  * Add your own custom css below this text.
  */
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.nav-toggler{
+    display: flex;
+    gap: 2%;
+    justify-content: space-around;
+
+}
+.caixa{
+    width: 300px;
+    border: 3px solid #e3efe3;
+    padding: 50px;
+    margin: 45px;
+}

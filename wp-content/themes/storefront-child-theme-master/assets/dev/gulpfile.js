@@ -1,6 +1,6 @@
 const { series, parallel, src, dest, watch} = require('gulp');
 
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const rename = require("gulp-rename");
@@ -21,7 +21,7 @@ function compileSass(done) {
 
 function compileJs(done){
     src('js/*.js')
-            .pipe(babel({ presets: ['@babel/preset-env'] }).on('error', (response) => console.error(response.message) ))
+        .pipe(babel({ presets: ['@babel/preset-env'] }).on('error', (response) => console.error(response.message) ))
         .pipe(minify())
         .pipe(rename({ suffix: '.min' }))
         .pipe(dest('../js'));
